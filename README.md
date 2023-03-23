@@ -20,29 +20,29 @@ IDEA+Navicat
 
 打开Navicat，连接本地mysql，创建数据库book_manage，修改字符集utf8，否则不支持中文。
 
-![image-20230322185712256](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322185712256.png)
+![image-20230322185712256](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322185712256.png)
 
 新建三张表student，book和Borrow：
 
 student表：
 
-![image-20230322190104253](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190104253.png)
+![image-20230322190104253](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190104253.png)
 
 book表：
 
-![image-20230322205351082](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322205351082.png)
+![image-20230322205351082](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322205351082.png)
 
 borrow表：
 
-![image-20230322190128571](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190128571.png)
+![image-20230322190128571](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190128571.png)
 
 添加borrow表的外键：
 
-![image-20230322190145672](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190145672.png)
+![image-20230322190145672](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190145672.png)
 
 添加borrow表的索引：
 
-![image-20230322190204745](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190204745.png)
+![image-20230322190204745](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190204745.png)
 
 添加book表的触发器：
 
@@ -50,11 +50,11 @@ borrow表：
 DELETE FROM borrow WHERE bid = old.bid
 ```
 
-![image-20230322190229030](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190229030.png)
+![image-20230322190229030](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190229030.png)
 
 添加student表的触发器：
 
-![image-20230322190326098](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190326098.png)
+![image-20230322190326098](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190326098.png)
 
 ```sql
 DELETE FROM borrow WHERE sid = old.sid
@@ -64,11 +64,11 @@ DELETE FROM borrow WHERE sid = old.sid
 
 使用IDEA，利用Maven创建项目：
 
-![image-20230322190522604](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190522604.png)
+![image-20230322190522604](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190522604.png)
 
 连接数据库，并测试连接：
 
-<img src="C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322190622295.png" alt="image-20230322190622295"  />
+<img src="https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322190622295.png" alt="image-20230322190622295"  />
 
 打开pom.xml，将<maven.compiler.source>和<maven.compiler.target>修改版本为8，使用jdk8进行编译，以免不必要的问题，并添加依赖：
 
@@ -387,9 +387,9 @@ public class Main {
 
 测试一下，发现可以插入。
 
-![image-20230322203931034](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322203931034.png)
+![image-20230322203931034](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322203931034.png)
 
-![image-20230322203944090](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322203944090.png)
+![image-20230322203944090](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322203944090.png)
 
 #### 录入书籍信息
 
@@ -425,7 +425,7 @@ case 2:
 
 运行测试一下，可以插入数据。
 
-![image-20230322205304146](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322205304146.png)
+![image-20230322205304146](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322205304146.png)
 
 ### 完整的日志系统
 
@@ -468,7 +468,7 @@ log.info("新添加了一条学生信息。" + student);
 
 book同理，然后测试，发现多了一个console.log文件，可以正常输出日志了。
 
-![image-20230322212153462](C:\Users\古峰\AppData\Roaming\Typora\typora-user-images\image-20230322212153462.png)
+![image-20230322212153462](https://gitee.com/gufengspace/github_img/raw/master/img/image-20230322212153462.png)
 
 ### 查询书籍信息列表
 
