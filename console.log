@@ -1,0 +1,8 @@
+3月 22, 2023 9:21:05 下午 book.manage.Main lambda$addStudent$1
+信息: 新添加了一条学生信息。Student(sid=0, name=小刚, sex=男, grade=2020)
+3月 22, 2023 9:21:14 下午 book.manage.Main lambda$addStudent$1
+信息: 新添加了一条学生信息。Student(sid=0, name=小芳, sex=女, grade=2021)
+3月 22, 2023 9:21:32 下午 book.manage.Main lambda$addStudent$1
+信息: 新添加了一条学生信息。Student(sid=0, name=小王, sex=女, grade=2022)
+3月 22, 2023 9:25:14 下午 book.manage.Main lambda$addBook$0
+信息: 新添加了一条书籍信息。Book(bid=0, title=书籍2, desc=书籍2信息, price=10.2)
